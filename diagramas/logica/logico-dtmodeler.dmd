@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="logico-dtmodeler" id="D13CE289-D3BC-63D7-353B-6567DCA3CF4F" version="3.5">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 00:46:15 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D13CE289-D3BC-63D7-353B-6567DCA3CF4F</designId>
+</OSDM_Design>

@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EF972424-6754-7CB5-ED12-920FBA8EEE5C" name="FUNCIONARIO">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:00:27 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_matricula_funcionario" id="F0DD5E5D-6411-60F1-62B5-103BAB45C14B">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:01:04 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_funcionario" id="0304677F-D489-C99E-392A-4911F8115C6D">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:01:41 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cargo" id="E95F7310-D025-49CF-C158-CA3BC8996515">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:28:31 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_solicitacao" id="ABCD81C6-E95F-6534-CE02-51044BB5ADFB">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:50:03 UTC</createdTime>
+<generatorID>33D1DC55-F968-30F5-55A8-7539B17D2C6B</generatorID>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<referedAttribute>7B5C04B8-0376-3A96-1E72-93A81BBD6EDE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0475161A-DF5E-12A6-2F9C-0D7FEFB8B2CB" name="FUNCIONARIO PK">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:01:32 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F0DD5E5D-6411-60F1-62B5-103BAB45C14B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

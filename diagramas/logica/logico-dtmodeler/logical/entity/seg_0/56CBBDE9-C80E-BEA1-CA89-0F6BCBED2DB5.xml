@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56CBBDE9-C80E-BEA1-CA89-0F6BCBED2DB5" name="DEPARTAMENTO">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:37:59 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nm_email" id="8CA15CB5-887B-7067-A184-DF9350CF3689">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:38:07 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_telefone" id="1C286F1F-73AF-85F8-95F9-E367C4A7A747">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:38:23 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_endereco" id="D0B6A2C4-AC7B-D359-F24A-EBA5EB1886E6">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:38:42 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_departamento" id="91831C8A-6994-BFB7-BF25-56A5B7483757">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:39:30 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sg_secretaria_departamento" id="8F360CC9-F033-1D1F-4A3E-E9EBA75172E8">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:39:53 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_departamento" id="AE10FE50-0BE5-69EE-5C18-E4A08E2AF839">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:40:19 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DD3F4CC5-DDD1-0684-1EFE-69E3A58D3C0A" name="DEPARTAMENTO PK">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:45:08 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AE10FE50-0BE5-69EE-5C18-E4A08E2AF839</attributeRef>
+<attributeRef>8F360CC9-F033-1D1F-4A3E-E9EBA75172E8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

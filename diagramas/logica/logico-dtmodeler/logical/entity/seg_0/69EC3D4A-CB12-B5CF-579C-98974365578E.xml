@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="69EC3D4A-CB12-B5CF-579C-98974365578E" name="SOLICITACAO">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:28:51 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="dt_solicitacao" id="9EF68C52-E99E-F3EE-8830-F3BF9BB5900B">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:29:08 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_solicitacao" id="7B5C04B8-0376-3A96-1E72-93A81BBD6EDE">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:29:24 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2AA73448-93FB-B273-34FE-08881A89B112" name="SOLICITACAO PK">
+<createdBy>machadoah</createdBy>
+<createdTime>2023-11-04 01:29:35 UTC</createdTime>
+<ownerDesignName>logico-dtmodeler</ownerDesignName>
+<engineerTo>
+<item key="105C2571-C2D9-8A1B-0EA7-752E0A1B7761" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7B5C04B8-0376-3A96-1E72-93A81BBD6EDE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
