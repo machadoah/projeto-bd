@@ -1,0 +1,55 @@
+-- Roteiro em texto do Modelo Físico do projeto de banco de dados criado no LIVE SQL 
+
+CREATE TABLE funcionario 
+(cd_matricula_funcionario NUMBER(11) PRIMARY KEY, 
+nm_funcionario  VARCHAR(40) NOT NULL, 
+nm_cargo  VARCHAR(40) NOT NULL)
+
+CREATE TABLE solicitacao 
+(cd_solicitacao NUMBER(20) PRIMARY KEY, 
+dt_solicitacao DATE)
+
+CREATE TABLE memorando 
+(nm_assunto  VARCHAR(40) NOT NULL, 
+nm_categoria  VARCHAR(40) NOT NULL, 
+ds_acao_memorando VARCHAR(150) NOT NULL)
+
+
+CREATE TABLE departamento 
+(cd_departamento NUMBER(11) PRIMARY KEY, 
+nm_email  VARCHAR(50) NOT NULL, 
+cd_telefone VARCHAR(20) NOT NULL, 
+nm_endereco VARCHAR(150) NOT NULL, 
+nm_departamento VARCHAR(40) NOT NULL)
+
+
+ALTER TABLE solicitacao ADD cd_matricula NUMBER(11)
+
+ALTER TABLE solicitacao ADD CONSTRAINT solicitacao_funcionario_fk FOREIGN KEY (cd_matricula)  
+REFERENCES funcionario (cd_matricula_funcionario)
+
+ALTER TABLE memorando ADD CONSTRAINT departamento_fk FOREIGN KEY (cd_department)  
+REFERENCES departamento (cd_departamento)
+
+ALTER TABLE memorando ADD cd_department NUMBER(11)
+
+ALTER TABLE memorando ADD CONSTRAINT departamento_fk FOREIGN KEY (cd_department)  
+REFERENCES departamento (cd_departamento)
+
+ALTER TABLE departamento ADD sg_secretaria_departamento VARCHAR(10)
+
+CREATE TABLE memorandos_solicitacao 
+(cd_depart NUMBER(11),cd_solicita NUMBER(20),cd_mat_funcionario NUMBER(11))
+
+DESC memorandos_solicitacao
+
+ALTER TABLE memorandos_solicitacao ADD CONSTRAINT depart_fk FOREIGN KEY (cd_depart)  
+REFERENCES departamento (cd_departamento)
+
+ALTER TABLE memorandos_solicitacao ADD CONSTRAINT solicita_funcionario_fk FOREIGN KEY (cd_solicita)  
+REFERENCES solicitacao (cd_solicitacao)
+
+ALTER TABLE memorandos_solicitacao ADD CONSTRAINT mat_funcionario_fk FOREIGN KEY (cd_mat_funcionario)  
+REFERENCES funcionario (cd_matricula_funcionario)
+
+SELECT table_name, constraint_type, constraint_name, r_constraint_name FROM user_constraints
